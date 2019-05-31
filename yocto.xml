@@ -3,6 +3,7 @@
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
   <remote name="qt5" fetch="https://github.com/meta-qt5" />
+  <remote name="rockchip" fetch="https://github.com/rockchip-linux" />
 
   <project path="yocto/poky" remote="yocto" name="poky" revision="warrior" >
     <linkfile src="scripts" dest="yocto/scripts" />
@@ -18,7 +19,7 @@
 
   <project path="yocto/meta-qt5" remote="qt5" name="meta-qt5" revision="warrior" />
 
-  <project path="yocto/meta-rockchip" name="meta-rockchip" revision="yocto-next" />
+  <project path="yocto/meta-rockchip" remote="rockchip" name="meta-rockchip" revision="yocto-next" />
 
-  <project path="yocto/build/conf" name="build" revision="yocto-next" />
+  <project path="yocto/build/conf" remote="rockchip" name="build" revision="yocto-next" />
 </manifest>
